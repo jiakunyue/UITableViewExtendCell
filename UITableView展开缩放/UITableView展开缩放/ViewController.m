@@ -93,6 +93,10 @@
     CustomHeaderFooterView *titleView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"CustomHeaderFooterView"];
     titleView.delegate = self;
     titleView.section = section;
+    
+    ClassModel *model = _classModels[section];
+    titleView.normalClassNameLabel.text = model.className;
+    
     return titleView;
 }
 

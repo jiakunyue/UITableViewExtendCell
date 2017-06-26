@@ -17,7 +17,8 @@
 @end
 
 @interface CustomHeaderFooterView : UITableViewHeaderFooterView
-
+/** 分组标题 */
+@property (nonatomic, strong) UILabel *normalClassNameLabel;
 /** delegate */
 @property (nonatomic, weak) id<CustomHeaderFooterViewDelegate> delegate;
 

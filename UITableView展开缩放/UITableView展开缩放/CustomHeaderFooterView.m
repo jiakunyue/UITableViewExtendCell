@@ -30,6 +30,12 @@
     contentView.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.05f];
     [self addSubview:contentView];
     
+    //标题
+    UILabel *normalClassNameLabel      = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 100, 26)];
+    normalClassNameLabel.font = [UIFont systemFontOfSize:12.0f];
+    [contentView addSubview:normalClassNameLabel];
+    self.normalClassNameLabel = normalClassNameLabel;
+    
     //上分割线
     UIView *line1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScrren_Width, 0.5)];
     line1.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.25f];
